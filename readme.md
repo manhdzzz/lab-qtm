@@ -1,10 +1,6 @@
 # LAB QTM
 
 ## 1. BE
-```bash
-cd /www/wwwroot/m.mywep.site
-nano 1.py
-```
 
 ```python
 from fastapi import FastAPI, Request
