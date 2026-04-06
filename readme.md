@@ -1,6 +1,6 @@
-# Cài đặt Traffic Live Monitor & Network Rules
+# LAB QTM
 
-## 1. Tạo Backend (FastAPI)
+## 1. BE
 ```bash
 cd /www/wwwroot/m.mywep.site
 nano 1.py
@@ -85,7 +85,7 @@ if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
 ```
 
-## 2. Tạo Frontend (Giao diện)
+## 2. Tạo FE
 ```bash
 nano index.html
 ```
@@ -168,7 +168,7 @@ nano index.html
 </html>
 ```
 
-## 3. Quản lý Service chạy ngầm
+## 3. Quản lý SV
 ```bash
 nano /etc/systemd/system/traffic.service
 ```
@@ -194,7 +194,7 @@ WantedBy=multi-user.target
 systemctl status traffic
 ```
 
-## 4. Giám sát Network & Iptables
+## 4. IPTABLE
 ```bash
 # Xem cổng mạng vật lý (vd: eth0)
 ip link show
